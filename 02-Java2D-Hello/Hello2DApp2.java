@@ -29,10 +29,10 @@ class Hello2DFrame extends JFrame {
         int h = getHeight();
 
         // mudando a cor de fundo //
-        g2d.setPaint(Color.RED); // mudando a cor do contexto grafico
+        g2d.setPaint(Color.BLACK); // mudando a cor do contexto grafico
         g2d.fillRect(0, 0, w, h); // redesenhando fundo
 
-        g2d.setPaint(Color.BLACK); // mudando a cor do contexto grafico
+        g2d.setPaint(Color.RED); // mudando a cor do contexto grafico
         g2d.drawLine(0, 0, w, h); // desenhando linha 1
         g2d.drawLine(w, 0, 0, h); // desenhando linha 2
 
