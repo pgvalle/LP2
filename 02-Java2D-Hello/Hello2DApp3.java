@@ -18,7 +18,7 @@ class Hello2DFrame extends JFrame {
                 }
             }
         );
-        this.setTitle("Java2D - Hello World 3");
+        this.setTitle("Java2D - Hello World Ben 10");
         this.setSize(350, 350);
     }
 
@@ -27,13 +27,17 @@ class Hello2DFrame extends JFrame {
         Graphics2D g2d = (Graphics2D) g;
         int w = getWidth();
         int h = getHeight();
+        int[] x1 = {w / 2, w, 0};
+        int[] y1 = {h / 2, h, h};
+        int[] x2 = {w / 2, w, 0};
+        int[] y2 = {h / 2, 0, 0};
 
         // mudando a cor de fundo //
         g2d.setPaint(Color.BLACK); // mudando a cor do contexto grafico
         g2d.fillRect(0, 0, w, h); // redesenhando fundo
 
         g2d.setPaint(Color.GREEN);
-        g2d.fillRect(0, 0, w, h / 8);
-        g2d.fillRect(0, h / 8, 6 * w / 8, h / 8);
+        g2d.fillPolygon(x1, y1, 3); // pintando primeiro triangulo
+        g2d.fillPolygon(x2, y2, 3); // pintando segundo triangulo
     }
 }
