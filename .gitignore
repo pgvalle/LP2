@@ -1,2 +1,5 @@
 # ignoring all .class files
 **.class
+
+# ignoring all a.out files
+**.out
