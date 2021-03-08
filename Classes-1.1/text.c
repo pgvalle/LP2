@@ -13,7 +13,7 @@ typedef struct
 // item 2
 void Text_print(const Text *t)
 {
-    printf("Texto em (%d, %d)\nFonte: %s\nEstilo: %s\nTamanho: %.1f px\n",
+    printf("Texto em (%d, %d)\nFonte:   %s\nEstilo:  %s\nTamanho: %.1f px\n",
            t->x, t->y, t->family, t->style, t->size);
 }
 
