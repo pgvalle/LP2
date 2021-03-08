@@ -24,10 +24,7 @@ class Text {
 
     // item 2
     public void print() {
-        System.out.println("Texto em (" + this.x + ", " + this.y + ")");
-
-        System.out.println("Fonte:   " + this.family);
-        System.out.println("Estilo:  " + this.style);
-        System.out.println("Tamanho: " + this.size);
+        System.out.format("Texto em (%d, %d)\nFonte:   %s\nEstilo:  %s\nTamanho: %.1f px\n",
+            this.x, this.y, this.family, this.style, this.size);
     }
 }
