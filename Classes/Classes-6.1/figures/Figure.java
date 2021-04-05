@@ -21,26 +21,6 @@ public abstract class Figure {
 
     public abstract void paint(Graphics2D g2d);
 
-    public void setPosition(int x, int y) {
-        this.x = x; this.y = y;
-    }
-	public int getX() {
-        return this.x;
-    }
-	public int getY() {
-        return this.y;
-    }
-
-	public void setSize(int w, int h) {
-        this.w = w; this.h = h;
-    }
-	public int getW() {
-        return this.w;
-    }
-	public int getH() {
-        return this.h;
-    }
-
 	public void setBackground(Paint bg) {
         this.background = bg;
     }
