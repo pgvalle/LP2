@@ -24,14 +24,8 @@ public abstract class Figure {
 	public void setBackground(Paint bg) {
         this.background = bg;
     }
-	public Paint getBackground() {
-        return this.background;
-    }
 
 	public void setOutline(Paint ol) {
         this.outline = ol;
-    }
-	public Paint getOutline() {
-        return this.outline;
     }
 }
