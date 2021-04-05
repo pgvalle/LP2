@@ -37,17 +37,5 @@ public class Triangulo extends Figure {
 		g2d.setPaint(super.outline);
 		g2d.drawPolygon(this.xlist, this.ylist, 3);
 	}
-
-	@Override
-	public void setPosition(int x, int y) {
-        super.setPosition(x, y);
-		this.setPoints();
-    }
-
-	@Override
-	public void setSize(int w, int h) {
-        super.setSize(w, h);
-		this.setPoints();
-    }
 }
 	
